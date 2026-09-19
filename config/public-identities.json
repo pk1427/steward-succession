@@ -1,8 +1,9 @@
 {
   "stableCataloguePointer": { "owner": "0xC42AdB802DF17a7CfC4367912aE0C9b44DbAF024", "topic": "0x4a495a7be3122a74c7668fd27b2fbc0941467595fd21be2c432187fe64f9c6cb" },
   "rootAuthority": "0xC42AdB802DF17a7CfC4367912aE0C9b44DbAF024",
-  "currentPublisher": "0xF67C795B80E2D1Dc864Cb24c800690E63fbC7176",
+  "formerPublisher": "0xF67C795B80E2D1Dc864Cb24c800690E63fbC7176",
+  "currentPublisher": "0x2B8bff28f868FB662B48d8C3CfF5567CC84c1130",
   "namedSuccessor": "0x2B8bff28f868FB662B48d8C3CfF5567CC84c1130",
-  "payer": "node-wallet-that-owns-PAYER_BATCH_ID",
+  "payer": "0xa3112455a919385ed2a0081de0ec87690cdbb67e",
   "catalogueTopic": "0x68a6e00fe5f3b5ed2454307356e1cc90e23799ee05155e6ecab820cf1db32599"
 }
