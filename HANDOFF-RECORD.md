@@ -1,7 +1,5 @@
-# Completed hand-off record — 2026-09-19
+# Hand-off record
 
-Outgoing signing identity: `0x89d4050aBF1234E91E2e45aF70743B239cB86E1F` (Ngawang Dorje)
+This record is intentionally incomplete until a real hand-off is performed. Do **not** represent a test, placeholder identity, or planned hand-off as completed evidence.
 
-Incoming signing identity: `0xC21d9e086AeE39b07c9a65E75f0DF16A6f2B7c9D` (Sister Pema)
-
-The council-approved root pointer was updated to the incoming publisher's feed at feed index **1**. Evidence is the root feed update index and the incoming address, which is also named in this record and the stewardship agreement. Both custodians witnessed retrieval through the unchanged root owner/topic in `config/public-identities.json`.
+To complete it, record the outgoing and incoming public signing identities, the actual root feed update/index or Swarm reference produced by `npm run succeed -- <incoming-address>`, the date, and both witnesses. The immutable root feed update plus the incoming address must be verifiable against `config/public-identities.json` and the feed resolver.
