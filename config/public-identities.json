@@ -1,7 +1,7 @@
 {
-  "stableCataloguePointer": { "owner": "0x13dA6E91296e6dB2B7d49a7F3B9FC0e3B4aB9D42", "topic": "seven-libraries-current-publisher-v1" },
+  "stableCataloguePointer": { "owner": "0x13dA6E91296e6dB2B7d49a7F3B9FC0e3B4aB9D42", "topic": "0x4a495a7be3122a74c7668fd27b2fbc0941467595fd21be2c432187fe64f9c6cb" },
   "rootAuthority": "0x13dA6E91296e6dB2B7d49a7F3B9FC0e3B4aB9D42",
   "currentPublisher": "0x89d4050aBF1234E91E2e45aF70743B239cB86E1F",
   "payer": "node-wallet-that-owns-PAYER_BATCH_ID",
-  "catalogueTopic": "seven-libraries-catalogue-v1"
+  "catalogueTopic": "0x68a6e00fe5f3b5ed2454307356e1cc90e23799ee05155e6ecab820cf1db32599"
 }
