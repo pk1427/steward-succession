@@ -14,5 +14,13 @@ const bee = new Bee(process.env.BEE_URL ?? 'http://localhost:1633')
 // Authority is the council/root key, separate from any current publisher identity.
 const rootWriter = bee.feed.makeWriter(config.stableCataloguePointer.topic, authorityKey)
 const pointer = await bee.data.upload(batchId, JSON.stringify({ format: 'catalogue-publisher-pointer', version: 1, publisher: incomingPublisher, topic: incomingTopic }))
-const update = await rootWriter.uploadReference(batchId, pointer.reference)
+// Resolve the next index from the network immediately before the update. An empty root feed starts at 0.
+let nextIndex: unknown = 0
+try {
+  const latest = await bee.feed.fetchLatestUpdate(config.stableCataloguePointer.topic, config.rootAuthority)
+  nextIndex = latest.feedIndexNext ?? 0
+} catch {
+  console.info('No root-pointer update yet; creating index 0.')
+}
+const update = await rootWriter.uploadReference(batchId, pointer.reference, { index: nextIndex as never })
 console.log(JSON.stringify({ stablePointer: config.stableCataloguePointer, incomingPublisher, incomingTopic, pointerReference: pointer.reference.toString(), rootFeedUpdateReference: update.reference.toString() }, null, 2))
