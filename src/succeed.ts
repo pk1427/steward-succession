@@ -14,5 +14,5 @@ const bee = new Bee(process.env.BEE_URL ?? 'http://localhost:1633')
 // Authority is the council/root key, separate from any current publisher identity.
 const rootWriter = bee.feed.makeWriter(config.stableCataloguePointer.topic, authorityKey)
 const pointer = await bee.data.upload(batchId, JSON.stringify({ format: 'catalogue-publisher-pointer', version: 1, publisher: incomingPublisher, topic: incomingTopic }))
-await rootWriter.uploadReference(batchId, pointer.reference)
-console.log(`Stable pointer rotated by root authority to ${incomingPublisher}`)
+const update = await rootWriter.uploadReference(batchId, pointer.reference)
+console.log(JSON.stringify({ stablePointer: config.stableCataloguePointer, incomingPublisher, incomingTopic, pointerReference: pointer.reference.toString(), rootFeedUpdateReference: update.reference.toString() }, null, 2))
