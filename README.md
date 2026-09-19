@@ -6,4 +6,6 @@ The tracked `catalogue.json` is a portable, self-describing example covering all
 
 `PAYER_BATCH_ID` is the treasury's funded storage identity and `PUBLISHER_PRIVATE_KEY` signs catalogue revisions. They are separate configuration inputs. `npm run renew` tops up the existing batch. `npm run succeed -- <incoming-address>` accepts the successor externally and requires the separately-held root-authority key.
 
+Renewal spends xBZZ from the Bee node wallet. If Bee returns `402 out of funds`, no top-up was applied: fund that wallet before retrying, while continuing to monitor the existing batch's TTL.
+
 See the agreement and completed hand-off record for the human process, its actual limitations, and continuity trigger.
