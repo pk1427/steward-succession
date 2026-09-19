@@ -1,0 +1,15 @@
+{
+  "format": "seven-libraries-catalogue",
+  "version": 1,
+  "catalogueName": "Ladakh–Spiti Shared Manuscript Catalogue",
+  "licence": "CC BY 4.0 metadata; image access follows each library's policy",
+  "holdings": [
+    { "library": "Tabo Monastery Library", "collectionCode": "TAB", "folios": 184, "condition": "stable", "damaged": 6, "missing": 0, "photographed": 178, "lastVerified": "2026-09-20" },
+    { "library": "Dhankar Monastery Library", "collectionCode": "DHK", "folios": 96, "condition": "fragile", "damaged": 14, "missing": 2, "photographed": 71, "lastVerified": "2026-09-18" },
+    { "library": "Ki Monastery Library", "collectionCode": "KYE", "folios": 213, "condition": "stable", "damaged": 3, "missing": 1, "photographed": 213, "lastVerified": "2026-09-19" },
+    { "library": "Sakya Monastery Library", "collectionCode": "SKY", "folios": 128, "condition": "needs assessment", "damaged": 9, "missing": 4, "photographed": 44, "lastVerified": "2026-09-12" },
+    { "library": "Nako Village Archive", "collectionCode": "NAK", "folios": 57, "condition": "fragile", "damaged": 11, "missing": 0, "photographed": 30, "lastVerified": "2026-09-15" },
+    { "library": "Kardang Monastery Library", "collectionCode": "KAR", "folios": 141, "condition": "stable", "damaged": 2, "missing": 0, "photographed": 102, "lastVerified": "2026-09-17" },
+    { "library": "Hemis Monastery Library", "collectionCode": "HEM", "folios": 276, "condition": "stable", "damaged": 8, "missing": 3, "photographed": 201, "lastVerified": "2026-09-20" }
+  ]
+}
